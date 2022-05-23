@@ -1,0 +1,171 @@
+/* General */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+  --main-transition: 0.3s;
+}
+body {
+  height: 100vh;
+  background-color: #ececec;
+  font-family: "Cairo", sans-serif;
+}
+/* Main Styling */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.layout {
+  position: relative;
+}
+.layout::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ececec;
+  z-index: -1;
+}
+.layout .container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.layout .login {
+  flex: 1;
+}
+@media (max-width: 991px) {
+  .layout .login {
+    text-align: center;
+  }
+  .layout .login p {
+    margin: auto;
+  }
+}
+.layout .login h1 {
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: -2px;
+  color: var(--main-color);
+}
+@media (max-width: 767px) {
+  .layout .login h1 {
+    font-size: 25px;
+  }
+  .layout .login p {
+    font-size: 13px;
+  }
+}
+.layout .login p {
+  font-size: 25px;
+  color: #777;
+  line-height: 2;
+  max-width: 500px;
+}
+.layout .image img {
+  position: relative;
+  width: 600px;
+  margin-left: 50px;
+  animation: up-and-down 5s linear infinite;
+  border-radius: 30px;
+}
+@media (max-width: 991px) {
+  .layout .image {
+    display: none;
+  }
+}
+/* Animation */
+@keyframes up-and-down {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+/* Form Styling */
+.loginForm {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 25px;
+  margin-right: 20px;
+}
+@media (max-width: 767px) {
+  .loginForm{
+    margin-right: 0;
+  }
+}
+@media (max-width: 991px) {
+  .loginForm{
+    margin-right: 0;
+  }
+}
+.loginForm label,
+.loginForm input {
+  display: block;
+}
+.loginForm label {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #777;
+}
+.loginForm input {
+  height: 40px;
+  width: calc(100% - 20px);
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.loginForm .submit {
+  width: 150px;
+  height: 50px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+  padding: 0;
+  background-color: var(--main-color);
+  color: white;
+  font-size: 18px;
+  transition: var(--main-transition);
+}
+.loginForm .submit:hover {
+  opacity: 0.7;
+  border: 0.5px solid var(--main-color);
+  background-color: transparent;
+  color: var(--main-color);
+}
+.card {
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  background-color: #777;
+}

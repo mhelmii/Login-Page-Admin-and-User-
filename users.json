@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "1",
+    "fullName": "Ahmed Mostafa",
+    "email": "a.mostafa@gmail.com",
+    "password": "supersecretpassword123",
+    "phone": "0102154123",
+    "address": "cairo",
+    "isAdmin": false
+  },
+  {
+    "_id": "2",
+    "fullName": "Ziad Anwar",
+    "email": "zoz.aa@gmail.com",
+    "password": "mrzoz55",
+    "phone": "0102154114",
+    "address": "cairo",
+    "isAdmin": false
+  },
+  {
+    "_id": "3",
+    "fullName": "Galal Ibrahim",
+    "email": "gi@gmail.com",
+    "password": "mypw515",
+    "phone": "0102154661",
+    "address": "cairo",
+    "isAdmin": true
+  },
+  {
+    "_id": "4",
+    "fullName": "Ahmed Nasser",
+    "email": "a.nasser@gmail.com",
+    "password": "t1512551",
+    "phone": "0102154515",
+    "address": "cairo",
+    "isAdmin": false
+  },
+  {
+    "_id": "5",
+    "fullName": "Youssef Alaa",
+    "email": "youssef.jo@gmail.com",
+    "password": "testtesttest",
+    "phone": "0121415125",
+    "address": "cairo",
+    "isAdmin": false
+  }
+]

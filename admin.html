@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/admin.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+</head>
+<body>
+    <div class="layout"></div>
+    <div class="new">
+        <div class="idNum">
+            <label for="idNum">ID Number:</label>
+            <input type="text" id="idNum">
+        </div>
+        <div class="name">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name">
+        </div>
+        <div class="email">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="pass">
+            <label for="pass">Password:</label>
+            <input type="text" id="pass">
+        </div>
+        <div class="phone">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone">
+        </div>
+        <div class="city">
+            <label for="city">Hometown:</label>
+            <input type="text" id="city">
+        </div>
+        <div class="admin">
+        <label for="isAdmin">Admin:</label>
+        <input type="checkbox" name="isAdmin" id="isAdmin">
+        </div>
+        <button id="save">Create</button>
+    </div>
+    <div class="navbar">
+        <h3>Admin</h3>
+        <a href="main.html">Logout</a>
+    </div>
+    <ul class="list"></ul>
+    <button onclick="showForm()" class="create">Create New User</button>
+    <script src="js/admin.js"></script>
+</body>
+</html>
